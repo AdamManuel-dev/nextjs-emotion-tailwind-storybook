@@ -1,0 +1,35 @@
+name: 'Chromatic'
+on:
+  # Trigger the workflow on push or pull request, but only for the main branch
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v1
+      # setup node
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.22.7'
+      # cache yarn packages
+      - name: Restore Yarn cache
+        uses: c-hive/gha-yarn-cache@v1
+      # install packages and build application
+      - name: Install dependencies via Yarn
+        run: yarn install
+      # run chromatic
+      - name: Run Chromatic
+        uses: chromaui/action@v1
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          buildScriptName: 'storybook:build'
+          exitOnceUploaded: true

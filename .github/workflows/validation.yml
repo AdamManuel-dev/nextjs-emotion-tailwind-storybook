@@ -1,0 +1,28 @@
+name: 'Validation'
+on:
+  # Trigger the workflow on push or pull request, but only for the main branch
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout code
+      - name: Checkout source code
+        uses: actions/checkout@v1
+      # setup node
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.22.7'
+      # cache yarn packages
+      - name: Restore Yarn cache
+        uses: c-hive/gha-yarn-cache@v1
+      # install packages and build application
+      - name: Install dependencies via Yarn
+        run: yarn install
+      # run validation tests
+      - name: Validate application
+        run: yarn validate

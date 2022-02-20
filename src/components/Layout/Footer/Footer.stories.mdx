@@ -1,0 +1,26 @@
+import { css } from '@emotion/core'
+import { Meta, Story, Preview, ArgsTable } from '@storybook/addon-docs/blocks'
+
+import { Footer } from './Footer.component'
+
+<Meta title='Layout/Footer' component={Footer} />
+
+export const Template = (args) => <Footer {...args} />
+
+# Basic Footer
+
+<Preview>
+  <Story name='Footer Example'>
+    <Footer />
+  </Story>
+</Preview>
+
+## Customizable Example
+
+<Story
+  name='Configurable'
+  args={{}}>
+  {Template.bind({})}
+</Story>
+
+<ArgsTable story={'Configurable'} />

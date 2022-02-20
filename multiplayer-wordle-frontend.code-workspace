@@ -1,0 +1,139 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "Personal Site React+Next"
+    }
+  ],
+  "settings": {
+    "editor.tokenColorCustomizations": {
+      "[High Contrast Theme]": {
+        "textMateRules": [
+          {
+            "scope": "support.constant.classname.twin",
+            "settings": {
+              "foreground": "#abb2bf"
+            }
+          },
+          {
+            "scope": "entity.other.inherited-class.variant.twin",
+            "settings": {
+              "foreground": "#c678dd"
+            }
+          },
+          {
+            "scope": "support.type.short-css.prop.twin",
+            "settings": {
+              "foreground": "#5dbeff"
+            }
+          },
+          {
+            "scope": "punctuation.section.embedded.short-css",
+            "settings": {
+              "foreground": "#5dbeff"
+            }
+          },
+          {
+            "scope": "support.type.arbitrary-style.prop.twin",
+            "settings": {
+              "foreground": "#8a88fc"
+            }
+          },
+          {
+            "scope": "support.type.arbitrary-style.endOpacity.twin",
+            "settings": {
+              "foreground": "#c05b5b6b"
+            }
+          },
+          {
+            "scope": "punctuation.section.embedded.arbitrary-style",
+            "settings": {
+              "foreground": "#8a88fc"
+            }
+          },
+          {
+            "scope": "entity.name.variable.css-value.twin",
+            "settings": {
+              "foreground": "#abb2bb"
+            }
+          }
+        ]
+      }
+    },
+    "codemetrics.basics.OverviewRulerModeEnabled": false,
+    "codemetrics.basics.FileSizeLimitMB": 1,
+    "codemetrics.basics.DiagnosticsEnabled": false,
+    "codemetrics.basics.CodeLensHiddenUnder": 3,
+    "codemetrics.basics.DecorationModeEnabled": false,
+    "editor.autoClosingQuotes": "always",
+    "codemetrics.basics.ComplexityLevelExtremeDescription": "Extreme",
+    "codemetrics.basics.ComplexityLevelExtreme": 50,
+    "codemetrics.basics.ComplexityLevelHighDescription": "High",
+    "codemetrics.basics.ComplexityLevelHigh": 25,
+    "codemetrics.basics.ComplexityLevelNormalDescription": "Normal",
+    "codemetrics.basics.ComplexityLevelNormal": 10,
+    "codemetrics.basics.ComplexityLevelLowDescription": "Low",
+    "codemetrics.basics.ComplexityLevelLow": 0,
+    "codemetrics.basics.CodeLensEnabled": true,
+    "codemetrics.basics.ComplexityTemplate": "Complexity {1} - {0} Code Cycles",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll": true,
+      "source.organizeImports": true
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "scss.validate": false,
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "tailwindCSS.experimental.classRegex": [
+      "tw`([^`]*)", // tw`...`
+      "tw=\"([^\"]*)", // <div tw="..." />
+      "tw={\"([^\"}]*)", // <div tw={"..."} />
+      "tw\\.\\w+`([^`]*)", // tw.xxx`...`
+      "tw\\(.*?\\)`([^`]*)" // tw(Component)`...`
+    ],
+    "tailwindCSS.includeLanguages": {
+      "typescript": "javascript",
+      "typescriptreact": "javascript"
+    },
+    "tailwindcss.colorDecorators": "inherit", // inherit from "editor.colorDecorators"
+    "tailwindcss.references": true,
+    "tailwindcss.diagnostics": {
+      "enabled": true,
+      "conflict": "strict",
+      "emptyClass": true,
+      "emptyGroup": true,
+      "emptyCssProperty": true
+    },
+    "tailwindcss.preferVariantWithParentheses": false,
+    "tailwindcss.fallbackDefaultConfig": true,
+    "tailwindcss.enabled": true,
+    "tailwindcss.jsxPropImportChecking": true,
+    "tailwindcss.rootFontSize": 16,
+    "tailwindcss.logLevel": "info",
+    "tailwindcss.documentColors": true,
+    "tailwindcss.hoverColorHint": "rgb"
+  },
+  "extensions": {
+    "recommendations": [
+      "apollographql.vscode-apollo",
+      "bradlc.vscode-tailwindcss",
+      "lightyen.tailwindcss-intellisense-twin",
+      "esbenp.prettier-vscode",
+      "wix.vscode-import-cost",
+      "mikehanson.auto-barrel",
+      "mhutchie.git-graph",
+      "eamodio.gitlens-insiders",
+      "waderyan.gitblame"
+    ]
+  }
+}

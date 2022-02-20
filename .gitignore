@@ -1,0 +1,30 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+cypress/videos
+cypresss/screenshots
+
+# next.js
+/.next/
+/out/
+
+# output
+/build
+/storybook-static
+
+# misc
+.DS_Store
+.env*
+*.env
+.idea/
+.eslintcache
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vercel

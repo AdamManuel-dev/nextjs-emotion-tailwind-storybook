@@ -1,0 +1,28 @@
+import { css } from '@emotion/core'
+import { Meta, Story, Preview, ArgsTable } from '@storybook/addon-docs/blocks'
+
+import { Topbar } from './Topbar.component'
+
+<Meta title='Layout/Topbar' component={Topbar} />
+
+export const Template = (args) => <Topbar {...args} />
+
+# Basic Topbar
+
+<Preview>
+  <Story name='Topbar Example'>
+    <Topbar />
+  </Story>
+</Preview>
+
+## Customizable Example
+
+<Story
+  name='Configurable'
+  args={{
+    user: 'Adam'
+  }}>
+  {Template.bind({})}
+</Story>
+
+<ArgsTable story={'Configurable'} />

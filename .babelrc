@@ -1,0 +1,11 @@
+{
+  "presets": ["next/babel", "@emotion/babel-preset-css-prop"],
+  "env": {
+    "production": {
+      "plugins": ["babel-plugin-macros", "@emotion/babel-plugin"]
+    },
+    "development": {
+      "plugins": ["babel-plugin-macros", ["@emotion/babel-plugin", { "sourceMap": true }]]
+    }
+  }
+}

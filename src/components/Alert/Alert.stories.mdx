@@ -1,0 +1,65 @@
+import { css } from '@emotion/core'
+import { Meta, Story, Preview, ArgsTable } from '@storybook/addon-docs/blocks'
+
+import { Alert } from './Alert.component'
+
+<Meta title='Components/Alert' component={Alert} />
+
+export const Template = (args) => <Alert {...args} />
+
+# Basic Alert
+
+<Preview>
+  <Story name='Alert Example'>
+    <Alert>Hello World!</Alert>
+  </Story>
+</Preview>
+
+# Info Alert
+
+<Preview>
+  <Story name='Info Alert'>
+    <Alert type="info">Hello World!</Alert>
+  </Story>
+</Preview>
+
+# Success Alert
+
+<Preview>
+  <Story name='Success Alert'>
+    <Alert type="success">Hello World!</Alert>
+  </Story>
+</Preview>
+
+# Warning Alert
+
+<Preview>
+  <Story name='Warning Alert'>
+    <Alert type="warning">Hello World!</Alert>
+  </Story>
+</Preview>
+
+# Error Alert
+
+<Preview>
+  <Story name='Error Alert'>
+    <Alert type="error">Hello World!</Alert>
+  </Story>
+</Preview>
+
+
+## Customizable Example
+
+<Story
+  name='Configurable'
+  args={{
+    children: 'Hello World',
+    styles: {
+      background: 'green'
+    },
+    type: 'info'
+  }}>
+  {Template.bind({})}
+</Story>
+
+<ArgsTable story={'Configurable'} />
