@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": false,
   "engines": {
-    "node": ">=12.22.0"
+    "node": ">=12.22.7"
   },
   "scripts": {
     "dev": "next dev",

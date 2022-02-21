@@ -15,6 +15,9 @@ the following stack:
 - [Next.js](https://nextjs.org/)
 - [Emotion](https://emotion.sh/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [twin.macro](https://github.com/ben-rogerson/twin.macro)
+- [TailwindCSS](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/)
 - [React](https://reactjs.org/)
 - [Cypress](https://cypress.io/)
 - [Storybook](https://storybook.js.org/) -
@@ -31,7 +34,7 @@ the following stack:
 
 ## Installation
 
-You must have `yarn` and `node>=12.16.1` installed first. To install the dependencies run:
+You must have `yarn` and `node>=12.22.7` installed first. To install the dependencies run:
 
 ```shell
 yarn install
@@ -102,5 +105,3 @@ To enable Chromatic, set the `CHROMATIC_PROJECT_TOKEN` secret:
 ### Chromatic - Library
 
 ![Chromatic Library Example](https://user-images.githubusercontent.com/37161095/103789042-8caee080-500d-11eb-91fc-3283c6a5b07b.png)
-# personal-site
-# nextjs-emotion-tailwind-storybook
